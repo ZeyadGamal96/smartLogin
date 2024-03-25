@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container pt-5" id="test_1">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content text-center shadow-lg p-3 w-75 mx-auto">
+                    <h1 class="text-info">Smart Login System</h1>
+                    <input type="text" class="form-control mb-2 text-white" id="userName" placeholder="Enter Your Name">
+                    <div class="wrong-name text-danger d-none">Invalid name format.</div>
+                    <input type="text" class="form-control mb-2 text-white" id="userEmail"
+                        placeholder="Enter Your Email">
+                    <div class="wrong-email text-danger d-none">Invalid email format.</div>
+                    <div class="email-exists text-danger d-none">Email already exists!</div>
+                    <input type="password" class="form-control mb-3 text-white" id="userPassword"
+                        placeholder="Enter Your Password">
+                    <div class="wrong-password text-danger d-none">Invalid password format.</div>
+                    <button type="button" class="btn btn-outline-info w-100 mb-3" onclick="signUp_1()">Sign Up</button>
+                    <div class="wrong-form text-danger d-none">Please fill in all fields.</div>
+                    <div class="success-form text-success d-none">Success!</div>
+                    <p class="text-white">You have an account? <a href="#" onclick="signIn()"
+                            class="text-white text-decoration-none">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
